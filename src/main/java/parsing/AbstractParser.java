@@ -1,5 +1,6 @@
 package parsing;
 
+import java.io.File;
 import java.io.Reader;
 import java.util.List;
 
