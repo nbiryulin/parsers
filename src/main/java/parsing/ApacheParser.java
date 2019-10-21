@@ -5,6 +5,8 @@ import java.util.List;
 
 public class ApacheParser extends AbstractParser {
     public List<String[]> parseRows(Reader reader) throws Exception {
+        name = "ApacheParser";
         return null;
     }
+
 }

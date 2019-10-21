@@ -13,6 +13,7 @@ import java.util.List;
 
 public class OpenCSVParser extends AbstractParser {
     public List<String[]> parseRows(Reader reader) throws Exception {
+        name = "OpenCSV parser";
         CSVParser parser = new CSVParserBuilder()
                 .withSeparator('\t')
                 .build();

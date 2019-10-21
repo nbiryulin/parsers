@@ -8,6 +8,7 @@ import java.util.List;
 
 public class SuperCsvParser extends AbstractParser{
     public List<String[]> parseRows(Reader reader) throws Exception {
+        name = "Super csv parser";
         CsvListReader parser = new CsvListReader(reader, CsvPreference.TAB_PREFERENCE);
         parser.getHeader(true);
         List<String[]> result = null;
