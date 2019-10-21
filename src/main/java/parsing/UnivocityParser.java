@@ -3,14 +3,13 @@ package parsing;
 import com.univocity.parsers.tsv.TsvParser;
 import com.univocity.parsers.tsv.TsvParserSettings;
 
-import java.io.File;
 import java.io.Reader;
 import java.util.List;
 
 
 public class UnivocityParser extends AbstractParser{
     @Override
-    public List<String[]> parseRows(Reader reader) throws Exception {
+    public List<String[]> parseRows(Reader reader) {
         name = "Univocity parser";
         TsvParserSettings settings = new TsvParserSettings();
         settings.getFormat().setLineSeparator("\n");

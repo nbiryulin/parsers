@@ -22,9 +22,10 @@ public class OpenCSVParser extends AbstractParser {
                 .withSkipLines(0)
                 .withCSVParser(parser)
                 .build();
+
         List<String[]> list = new ArrayList<String[]>();
         list = csvReader.readAll();
-        //reader.close();
+        reader.close();
         csvReader.close();
         return list;
     }
